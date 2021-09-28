@@ -1,10 +1,56 @@
+:root {
+  --main-bg-color: rgb(214 135 37);
+  --secondary-bg-color: #efefef;
+  --app-bg-color: rgb(252 239 214);
+  --highlight-color: rgb(197 141 247 / 55%);
+  --dark-app-bg: rgb(22,22,22);
+  --dark-app-secondary-bg: #6d6d6d;
+  --dark-app-highlight: rgba(58, 119, 58, 0.562);
+  --dark-main-bg-color: #099909;
+  --highlight-no-opacity: rgb(197 141 247);
+}
+
 .App {
-  text-align: center;
+  background-color: var(--app-bg-color);
+  color: black;
+  width: 100vw;
+  height: 100vh;
+  margin: 0px;
+
+}
+
+body, ul {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  margin: 0px;
+  padding: 0px;
+  height: 100vh;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.MuiFormControl-root .MuiTextField-root {
+  border: 1px solid whitesmoke;
+  border-radius: 10px;
+  color: whitesmoke;
+}
+
+#openingPageSection {
+  /* background-image:  url("abstract.PNG"); */
+	/* Set a specific height */
+	height: 99vh;
+	/* Position and center the image to scale nicely on all screens */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+  position: relative;
+  padding-top: 1px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -36,3 +82,145 @@
     transform: rotate(360deg);
   }
 }
+
+button {
+  margin: 20px;
+  border: 1px solid var(--highlight-color);
+  background-color:#3a3938;
+  height: 40px;
+  width: 150px;
+  border-radius: 25px;
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+select {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: var(--secondary-bg-color);
+  color: black;
+  margin: 20px;
+  width: 30vw;
+  margin-left: 30px;
+}
+
+
+.playlistContainer {
+  width: 35vw;
+  height: 65vh;
+  /* overflow: scroll; */
+  border: 2px solid var(--highlight-color);
+  border-radius: 10px;
+  background-color: var(--main-bg-color);
+  color: whitesmoke;
+  margin: 20px;
+  box-shadow: rgb(105 105 105) 0px 5px 5px;
+}
+
+.playlistItem {
+  border-bottom: 1px solid;
+  padding: 10px;
+  display: flex;
+  width: 90%;
+}
+
+.playlistItemSelected {
+  border-bottom: 1px solid;
+  padding: 10px;
+  display: flex;
+  width: 90%;
+  background: var(--highlight-color);
+}
+
+::-webkit-scrollbar {
+  background-color: rgb(0,0,0,0);
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(238, 238, 238);
+  border-radius: 10px
+}
+
+::-webkit-scrollbar-corner {
+  background-color: rgb(0,0,0,0);
+}
+
+.chatContainer {
+  width: 50vw;
+  background-color: var(--main-bg-color);
+  margin: 20px;
+  border-radius: 15px;
+  box-shadow: rgb(105 105 105) 0px 5px 5px;
+}
+
+.chatSubmitButton {
+  margin: 0px;
+  border-radius: 50px;
+  width: 6vw;
+  display: inline-block;
+  font-size: larger;
+}
+
+.messageWindow {
+  height: 55vh;
+  background: var(--secondary-bg-color);
+  margin: 20px;
+  border-radius: 10px;
+  margin-bottom: 0px;
+  padding: 20px;
+}
+
+.chatInput {
+  width: 40vw;
+  margin: 10px;
+  height: 30px;
+  border-radius: 5px;
+  background: whitesmoke;
+  display: inline-flex;
+  margin-left: 20px;
+}
+
+.headerBar {
+  margin: 0px;
+  background: #6aab66;
+  text-align: center;
+}
+
+.roomInfoContainer {
+  width: 20vw;
+  margin-left: auto;
+  margin-right: auto;
+  background: var(--main-bg-color);
+  border-radius: 5px;
+  height: 5vh;
+  color: whitesmoke;
+  padding: 10px;
+  box-shadow: rgb(105 105 105) 0px 5px 5px;
+  text-align: center;
+}
+
+.loginAnimate-enter {
+  opacity: 0;
+  transform: scale(0.9);
+}
+.loginAnimate-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+.loginAnimate-exit {
+  opacity: 1;
+}
+.loginAnimate-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms;
+}
+
+h3 {
+  margin: 0px;
+  padding: 0px;
+  font-size: 18px;
+}
+
