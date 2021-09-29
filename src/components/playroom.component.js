@@ -7,6 +7,7 @@ import SoundOffTitle from '../SoundOffTitle.png';
 
 const spotifyAPI = new S();
 var socket;
+let socketIOServer = "https://trkizgi2gm.us-east-2.awsapprunner.com"; //"http://localhost:4001"
 
 class Playroom extends Component {
   state = {};
@@ -78,7 +79,7 @@ class Playroom extends Component {
       })
     });
     console.log(this.state.roomID);
-    socket = io("http://localhost:4001",{
+    socket = io(socketIOServer,{
       query: {
         "roomID": this.props.location.state.id
       }

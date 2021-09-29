@@ -36,7 +36,7 @@ class LoadingPage extends Component {
                         <hr/>*/}
                         <img style={{height: '50px', filter: 'invert(1)'}} src={SoundOffTitle}></img>
                             {/* <a href="http://localhost:8888/login"> */}
-                            <a href="https://sweet-stingray-73.loca.lt/login">
+                            <a href="https://przftyvp9d.us-east-2.awsapprunner.com/login">
                                 <button style={styles.loginButton}>
                                     <img style={styles.buttonImage} src={sptfy} alt={"sptfy"}/>
                                     Login With Spotify
