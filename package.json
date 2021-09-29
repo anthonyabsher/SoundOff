@@ -11,8 +11,10 @@
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-http-client": "^1.0.1",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
     "react-spotify-web-playback": "^0.8.1",
+    "react-transition-group": "^4.4.1",
     "socket.io-client": "^3.0.4",
     "spotify-web-api-js": "^1.5.1",
     "web-vitals": "^0.2.4"
